@@ -3,9 +3,9 @@
 /**
  *main - print out line to stdout stream
  *
- *Return = 0
+ *Return: 0
  */
 int main(void)
-{puts("Programming is like building a mulitlingual puzzle \n");
-  return (0);
+{puts("\"Programming is like building a mulitlingual puzzle \n");
+return (0);
 }
