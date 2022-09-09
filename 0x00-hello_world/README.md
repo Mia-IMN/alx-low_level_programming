@@ -27,3 +27,24 @@ This script generates the assembly code of a C code and save it in an output fil
 This script compiles a C file and creates an executable named cisfun.
 
      $The C file name is saved in the variable $CFILE
+
+*File 4-puts.c*
+
+This C program prints some specified text
+
+*File: 5-printf.c*
+
+This C program prints some specified texts using the function printf
+
+*File: 6-size.c*
+
+This C program prints the size of various types on the computer it is compiled
+
+*File: 100-intel*
+
+This script generates the assembly code (intel syntax) of a C code and save it in an output file
+
+*File: 101-quote.c*
+
+This C program prints some specified text
+
