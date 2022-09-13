@@ -1,10 +1,10 @@
 #include <ctype.h>
-#include <stdio.h> 
+#include <stdio.h>
 #include <stdbool.h>
 
 /**
 *_islower - checks for lowercases
-*
+*@c:int
 *Return: 0
 */
 int _islower(int c)
