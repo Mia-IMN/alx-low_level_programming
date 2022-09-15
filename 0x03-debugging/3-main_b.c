@@ -2,12 +2,11 @@
 #include "main.h"
 
  /**
-  *main - takes a date and prints how many days are left in the year, taking
-  *3-main_b - file name
-  *leap years into account
-  *Return: 0
+  * main: takes a date and prints how many days are left in the year, taking
+  * leap years into account
+  *
+  * Return: 0
   */
-
 int main(void)
 {
 int month;
