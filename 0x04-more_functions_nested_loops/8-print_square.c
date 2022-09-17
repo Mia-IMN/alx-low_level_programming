@@ -1,7 +1,7 @@
 #include "main.h"
 
- /**
-  * print_square - print a square, followed by a new line.
+/**
+  *print_square - print a square, followed by a new line.
   * @size: size of square
   * Description: Can only use _putchar to print. Use '#' to print square.
   */
