@@ -1,29 +1,30 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
- *puts2 - function that prints every other character of a string,
- * starting with the first character, followed by a new line.
- *@str: pointer Dereferencing at string.
- *Return : @str
+ * _strlen - calculates the length of a string
+ * @s: string
+ * Return: length
  */
+int _strlen(char *s)
+{
+int a = 0;
 
+while (*s != '\0')
+{
+a++;
+s++;
+}
+return (a);
+}
+
+/**
+ * puts2 - prints every second character of a string, followed by a new line
+ * @str: string to print
+ */
 void puts2(char *str)
 {
-int i = 0;
-while (*str)
-{
-_putchar(*str);
-str++;
-if (str == '\0')
-{
-i++;
-_putchar('\n');
-break;
-}
-else
-str++;
-}
-if (i != 1)
+int b;
+for (b = 0; str[b] != '\0' && b < _strlen(str); b += 2)
+_putchar(str[b]);
 _putchar('\n');
 }
