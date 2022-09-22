@@ -9,10 +9,19 @@
 
 int _strcmp(char *s1, char *s2)
 {
-if (s1 == s2)
-return (0);
-else if (s1 > s2)
-return (15);
+int result, i;
+
+for (i = 0; s1[i] != '\0'; i++)
+{
+if (s1[i] == s2[i])
+result = (s1[i] - '0') - (s2[i] - '0');
+
 else
-return (-15);
+{
+result = (s1[i] - '0') - (s2[i] - '0');
+break;
+}
+}
+
+return (result);
 }
