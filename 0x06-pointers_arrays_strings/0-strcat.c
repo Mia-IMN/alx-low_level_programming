@@ -2,38 +2,19 @@
 #include <string.h>
 
 /**
- *_strlen -  counts the length of a char
- *@s: char pointer
- *Return: length
- */
-int _strlen(char *s)
-{
-int len = 0;
-
-while (*s != '\0')
-{
-len++;
-s++;
-}
-return (len);
-}
-/**
- *_strcat - concatenates two strings
- *@dest: char pointer
- *@src: char pointer
- *Return: 0
+ **_strcat - function that concatenates two strings.
+ *@dest: pointer caracter
+ *@src: pointer caracter
+ *Return: @dest of pointer type
  */
 
 char *_strcat(char *dest, char *src)
 {
-int len1, len2, i;
+int len = strlen(dest), i, n = strlen(src);
 
-len1 = _strlen(dest);
-len2 = _strlen(src);
-
-for (i = 0; i <= len2; i++)
+for (i = 0 ; i <= n; i++)
 {
-dest[len1 + 1] = src[i];
+dest[len + i] = src[i];
 }
 return (dest);
 }
