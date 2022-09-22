@@ -2,10 +2,9 @@
 #include <string.h>
 
 /**
- *_strcat - concatenates two strings
- * _strlen -  counts the length of a char
+ *_strlen -  counts the length of a char
  *@s: char pointer
- *Return: 0
+ *Return: length
  */
 int _strlen(char *s)
 {
@@ -18,6 +17,12 @@ s++;
 }
 return (len);
 }
+/**
+ *_strcat - concatenates two strings
+ *@dest: char pointer
+ *@src: char pointer
+ *Return: 0
+ */
 
 char *_strcat(char *dest, char *src)
 {
@@ -27,7 +32,8 @@ len1 = _strlen(dest);
 len2 = _strlen(src);
 
 for (i = 0; i <= len2; i++)
+{
 dest[len1 + 1] = src[i];
-
+}
 return (dest);
 }
