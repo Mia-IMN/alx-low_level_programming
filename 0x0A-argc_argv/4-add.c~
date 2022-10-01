@@ -1,0 +1,30 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ *main - adds positive numbers
+ *@argc: int parameter
+ *@arv: char parameter
+ *Return: 0 on success
+ */
+
+int main(int argc, char *argv[])
+{
+int sum, num = atoi(argv[1]);
+if (argc == 1)
+printf("0\n");
+else if (argv[1] != int)
+{
+printf("Error\n");
+return (1);
+else
+{
+while (argv[] <= argc)
+{
+sum += num++;
+}
+printf("%d\n", sum);
+}
+return (0);
+}
