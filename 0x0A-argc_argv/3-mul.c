@@ -6,21 +6,20 @@
  *main - multiplies two numbers
  *@argc: int parameter
  *@argv: string parameter
- *Return: 0
+ *Return: 0 for success
  */
 
 int main(int argc, char *argv[])
 {
-  /**
-   *int firstnum = argv[1];
-   *int secondnum = argv[2];
-   */
+int firstnum = atoi(argv[1]);
+int secondnum = atoi(argv[2]);
+int mul = firstnum * secondnum;
 
-if (argc == 1)
+if (argc != 3)
 {
 printf("Error\n");
 return (1);
 }
-printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+printf("%d\n", mul);
 return (0);
 }
