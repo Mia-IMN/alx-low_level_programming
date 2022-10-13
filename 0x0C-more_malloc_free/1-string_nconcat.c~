@@ -1,0 +1,29 @@
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ *string_nconcat - concatanates two strings
+ *@s1: char pointer
+ *@s2: char pointer
+ *@n: unsigned int
+ *
+ *Return: 0
+ */
+
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+ unsigned int i, count;
+ 
+ for (i = 0; i <= atoi(s2); i++)
+    count++;
+  if (count >= n)
+ int secondi;
+  char j;
+  char j = malloc(sizeof(char) * n);
+  
+      for (secondi = 0;  secondi <= s1; secondi++)
+	{
+	  s1[i2] = j[i2];
+	}
+      return (j);
+}
