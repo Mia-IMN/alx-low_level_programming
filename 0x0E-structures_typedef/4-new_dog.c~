@@ -1,0 +1,49 @@
+#include "dog.h"
+#include <stdlib.h>
+
+char *_strlen(char *c)
+{
+  int l;
+  char * j = 0;
+  for (l = 0; c[l] < '\0'; l++)
+    {
+      j[l] = c[l];
+    }
+  return (j);
+}
+
+
+
+/**
+ *new_dog - a function that creates a new dog
+ *@name: char pointer
+ *@age: float parameter
+ *@owner: char pointer
+ *
+ *Return: 0
+ */
+
+dog_t *new_dog(char *name, float age, char *owner)
+{
+
+  char *nameStore = NULL;
+  char *ownerStore = NULL;
+
+  dog_t *newDog; 
+
+  newDog->age = age;
+  *newDog->owner = *owner;
+
+    if (newDog->name == NULL || newDog->owner == NULL || newDog == NULL)
+    return NULL;
+
+nameStore = malloc(sizeof(*name) + 1);
+ownerStore = malloc(sizeof(*owner) + 1);
+
+  *nameStore = *_strlen(name);
+  *ownerStore = *_strlen(owner);
+
+  free(nameStore);
+  free(ownerStore);
+  return (0);
+}
