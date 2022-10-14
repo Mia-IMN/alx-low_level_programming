@@ -15,11 +15,11 @@ unsigned int i, sum;
 
 if (n == 0)
 return (0);
-va_start (sm, n);
+va_start(sm, n);
 sum = 0;
 for (i = 0; i < n; i++)
-sum += va_arg (sm, int);
+sum += va_arg(sm, int);
 
-va_end (sm);
-return sum;
+va_end(sm);
+return (sum);
 }
