@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+/**
+ *main - prints out answer to arguments
+ *@argv: argument vector
+ *@argc: argument counter
+ *Return 0
+ */
+
+int main(int argc, char *argv[])
+{
+
+}
